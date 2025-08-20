@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Department – University of Barishal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">BU CSE</div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#overview">Overview</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#staff">Staff</a>
+        <a href="#notice">Notice</a>
+        <a href="#news">News & Events</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Department of Computer Science & Engineering</h1>
+      <p>University of Barishal</p>
+    </div>
+  </section>
+
+  <main class="container main">
+    <section id="overview" class="section">
+      <h2>Overview</h2>
+      <p>The Department of Computer Science & Engineering offers rigorous programs blending theory and practice across algorithms, systems, AI, and software engineering.</p>
+      <div class="grid three">
+        <div class="card stat"><div class="stat-num" id="statStudents">450+</div><div class="stat-label">Students</div></div>
+        <div class="card stat"><div class="stat-num" id="statFaculty">30+</div><div class="stat-label">Faculty</div></div>
+        <div class="card stat"><div class="stat-num">Annual</div><div class="stat-label">CSE Fest & Hackathons</div></div>
+      </div>
+    </section>
+
+    <section id="faculty" class="section">
+      <div class="section-head">
+        <h2>Faculty Members</h2>
+        <input id="facultySearch" class="input" placeholder="Search by name or area" />
+      </div>
+      <div id="facultyList" class="grid three"></div>
+    </section>
+
+    <section id="staff" class="section">
+      <h2>Office Staff</h2>
+      <div id="staffList" class="grid two"></div>
+    </section>
+
+    <section id="notice" class="section">
+      <div class="section-head">
+        <h2>Notice Board</h2>
+        <a class="btn ghost" href="#">View All</a>
+      </div>
+      <div id="noticeList" class="list"></div>
+    </section>
+
+    <section id="news" class="section">
+      <h2>News & Events</h2>
+      <div id="newsGrid" class="grid two"></div>
+    </section>
+
+    <section id="syllabus" class="section">
+      <h2>Syllabus & Curriculum</h2>
+      <div id="syllabusList" class="grid two"></div>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research Areas</h2>
+      <div class="grid three" id="researchList"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid two">
+        <div class="card">
+          <p>Dept. of CSE, University of Barishal, Barishal-8200, Bangladesh</p>
+          <p>Email: cse@bu.ac.bd</p>
+          <p>Phone: +880 431-000000</p>
+        </div>
+        <form id="contactForm" class="card form">
+          <input class="input" type="text" id="name" placeholder="Your name" required>
+          <input class="input" type="email" id="email" placeholder="Email address" required>
+          <textarea class="input" id="message" placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Department of CSE, University of Barishal</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
