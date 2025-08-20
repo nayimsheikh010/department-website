@@ -3,103 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSE Department – University of Barishal</title>
+  <title>CSE University of Barishal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">BU CSE</div>
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav class="main-nav" id="mainNav">
-        <a href="#overview">Overview</a>
-        <a href="#faculty">Faculty</a>
-        <a href="#staff">Staff</a>
-        <a href="#notice">Notice</a>
-        <a href="#news">News & Events</a>
-        <a href="#syllabus">Syllabus</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Department of Computer Science & Engineering</h1>
-      <p>University of Barishal</p>
-    </div>
+ <!-- Header -->
+<header>
+  <div class="logo">Computer Science & Engineering</div>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#faculty">Faculty</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#students">Students</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to CSE Department</h1>
+    <p>Computer Science & Engineering – University of Barishal</p>
   </section>
 
-  <main class="container main">
-    <section id="overview" class="section">
-      <h2>Overview</h2>
-      <p>The Department of Computer Science & Engineering offers rigorous programs blending theory and practice across algorithms, systems, AI, and software engineering.</p>
-      <div class="grid three">
-        <div class="card stat"><div class="stat-num" id="statStudents">450+</div><div class="stat-label">Students</div></div>
-        <div class="card stat"><div class="stat-num" id="statFaculty">30+</div><div class="stat-label">Faculty</div></div>
-        <div class="card stat"><div class="stat-num">Annual</div><div class="stat-label">CSE Fest & Hackathons</div></div>
-      </div>
-    </section>
+  <!-- About Us -->
+  <section id="about">
+  <h2>About Us</h2>
+  <h2>
+  <p>
+    The Department of Computer Science and Engineering at the University of Barishal is a growing hub of technology and innovation.
+    Students here practice competitive programming regularly and develop strong problem-solving skills.
+    Many of our graduates are now working in the software industry, some in government IT sectors, and even in world-class companies like Google. Others are contributing through remote jobs with international firms — making us proud everywhere.
+</p></h2>
+</section>
 
-    <section id="faculty" class="section">
-      <div class="section-head">
-        <h2>Faculty Members</h2>
-        <input id="facultySearch" class="input" placeholder="Search by name or area" />
-      </div>
-      <div id="facultyList" class="grid three"></div>
-    </section>
 
-    <section id="staff" class="section">
-      <h2>Office Staff</h2>
-      <div id="staffList" class="grid two"></div>
-    </section>
+  <!-- Faculty -->
+  <section id="faculty">
+    <h2>Our Faculty</h2>
+    <div id="facultyList" class="faculty-container"></div>
+  </section>
 
-    <section id="notice" class="section">
-      <div class="section-head">
-        <h2>Notice Board</h2>
-        <a class="btn ghost" href="#">View All</a>
-      </div>
-      <div id="noticeList" class="list"></div>
-    </section>
+  <!-- Programs -->
+  <section id="programs">
+    <h2>Programs</h2>
+    <ul>
+      <li>BSc in CSE (4 Years)</li>
+      <li>MSc in CSE (2 Years)</li>
+    </ul>
+  </section>
 
-    <section id="news" class="section">
-      <h2>News & Events</h2>
-      <div id="newsGrid" class="grid two"></div>
-    </section>
+  <!-- Research -->
+  <section id="research">
+    <h2>Research Areas</h2>
+    <ul>
+      <li>Artificial Intelligence & Data Science</li>
+      <li>Software Engineering & HCI</li>
+      <li>Distributed Systems & IoT</li>
+      <li>Network Security & Cloud Computing</li>
+    </ul>
+  </section>
 
-    <section id="syllabus" class="section">
-      <h2>Syllabus & Curriculum</h2>
-      <div id="syllabusList" class="grid two"></div>
-    </section>
-
-    <section id="research" class="section">
-      <h2>Research Areas</h2>
-      <div class="grid three" id="researchList"></div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="grid two">
-        <div class="card">
-          <p>Dept. of CSE, University of Barishal, Barishal-8200, Bangladesh</p>
-          <p>Email: cse@bu.ac.bd</p>
-          <p>Phone: +880 431-000000</p>
-        </div>
-        <form id="contactForm" class="card form">
-          <input class="input" type="text" id="name" placeholder="Your name" required>
-          <input class="input" type="email" id="email" placeholder="Email address" required>
-          <textarea class="input" id="message" placeholder="Your message" required></textarea>
-          <button class="btn" type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Department of CSE, University of Barishal</p>
+  <!-- Students -->
+ <section id="students">
+  <h2>Students</h2>
+  <p>Student activities, clubs, achievements, and events are showcased here.</p>
+  <div class="student-stats">
+    <div>
+      <span>300+</span>
+      Currently Studying
     </div>
+    <div>
+      <span>300+</span>
+      Graduated
+    </div>
+  </div>
+</section>
+
+
+ <!-- Footer -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>University Of Barishal</h3>
+      <p>Kornokathi, Barishal-8254, Bangladesh</p>
+      <p>Phone: 0431-2177771-77</p>
+      <p>Email: registrar@bu.ac.bd</p>
+      <p>Fax: 09032-56270</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Academics</h3>
+      <ul>
+        <li><a href="#">Academic Programs</a></li>
+        <li><a href="#">Academic Calendar</a></li>
+        <li><a href="#">Journal Access</a></li>
+        <li><a href="#">Scholarships</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Admission</h3>
+      <ul>
+        <li><a href="#">Undergraduate</a></li>
+        <li><a href="#">Postgraduate</a></li>
+        <li><a href="#">Foreign Students</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Important Links</h3>
+      <ul>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Ministry of Education</a></li>
+        <li><a href="#">Prime Minister’s Office</a></li>
+        <li><a href="#">UGC</a></li>
+        <li><a href="#">National Portal</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> CSE Department, University of Barishal</p>
   </footer>
 
   <script src="script.js"></script>
